@@ -1,0 +1,49 @@
+@keyframes fan{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#fan{
+    position: absolute;
+    animation: fan 1s linear 0s;
+    height: 300px;
+    animation-iteration-count:infinite;
+}
+@keyframes copter{
+    0%{
+        opacity: 1;
+        top: 90%;
+        left: 80%
+    }
+    20%{
+        top: 0;
+        /* opacity: 0; */
+        left: 80%;
+    }
+
+    40%{
+        top:0;
+        left:0;
+    }
+    100%{
+        top: 90%;
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+#copter{
+    top: 90%;
+        left: 80%;
+        width: 300px;
+
+    position: absolute;
+    animation: copter 7s linear 0s;
+    animation-iteration-count: infinite;
+    /* top: 307px;
+    left: 643px */
+    
+}
